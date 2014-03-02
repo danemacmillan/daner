@@ -1,0 +1,9 @@
+{{! Tags template for index page and post page. }}
+
+<ul class="post-tags">
+	{{#foreach tags}}
+		<li title="{{name}}">
+			<a rel="nofollow" title="Find more posts tagged with &quot;{{name}}&quot;" href="https://www.google.com/search?q=site:{{@blog.url}}+%22%23{{encode name}}%22">#<span itemprop="keywords">{{name}}</span></a>
+		</li>
+	{{/foreach}}
+</ul>

@@ -1,0 +1,14 @@
+# Basic
+
+*~
+*.DS_Store
+Thumbs.db
+*.conf
+*.crt
+*.csr
+*.key
+
+# Ignore my specific IDs and usernames in the partials/ids directory, but
+# keep the README file in place.
+partials/ids/*
+!partials/ids/README.md

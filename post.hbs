@@ -1,0 +1,57 @@
+{{!< default}}
+
+<main class="content" role="main">
+
+		{{#post}}
+
+			<article class="{{post_class}}" itemscope itemtype="http://schema.org/BlogPosting">
+				<header class="post-header">
+					<span class="post-meta">
+						<time datetime="{{date format="YYYY-MM-DD"}}" itemprop="datePublished">{{date format='dddd, MMMM DD, YYYY'}}</time>
+					</span>
+					
+					{{#if tags}}
+						{{> post_tags}}
+					{{/if}}
+					
+					<h1 class="post-title" itemprop="name headline">{{{title}}}</h1>
+				</header>
+				
+				<section class="post-content" itemprop="articleBody">
+					{{content}}
+				</section>
+				
+				<section class="author-info">
+					<div class="post-author">
+						<span class="published-text">Written by:</span>
+						<a itemscope itemprop="author url" itemtype="http://schema.org/Person" href="/about/">
+							<i class="image-wrap">
+								<img src="{{author.image}}" />
+							</i>
+							<span style="author-wrap" itemprop="name">{{author}}</span>
+						</a>
+					</div>
+				</section>
+
+			</article>
+			
+			{{! Embed preferred sharing system. See partials to customize this. }}
+			<footer class="post-footer">
+				<section class="share">
+					<h4>Know someone who'd want to read this?</h4>
+					{{> addthis}}
+				</section>
+			</footer>
+    
+		{{/post}}
+
+</main>
+
+{{! Embed preferred commenting system. See partials to customize this. }}
+<section class="post-comments">
+	<div class="such-troll-so-amaze-very-dane">
+		<h4 class="post-discuss">Engage in open-minded discussion?</h4>
+		<h4 class="post-discuss-agree" title="Muahahaha ha HA HA ahahahh hhahaa.. aaaaa hahha... ah. HA. ah. Such clever.">Agree with everything here:</h4>
+	</div>
+	{{> disqus}}
+</section>

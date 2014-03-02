@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<title>{{meta_title}} &middot; {{@blog.title}}</title>
+		<meta name="description" content="{{meta_description}}" />
+		<meta name="HandheldFriendly" content="True" />
+		<meta name="MobileOptimized" content="320" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="shortcut icon" href="{{asset "favicon.ico"}}">
+		<link rel="stylesheet" type="text/css" href="{{asset "css/screen.css"}}" />
+		{{ghost_head}}
+	</head>
+	<body class="{{body_class}}" itemscope itemtype="http://schema.org/Blog">
+		{{> header}}
+		{{{body}}}
+		{{> footer}}
+
+		{{! Commented out ghost_foot, because there's no need for JS at the moment.}}
+		{{!ghost_foot}}
+		<script type="text/javascript" src="{{asset "js/jquery.fitvids.js"}}"></script>
+		<script type="text/javascript" src="{{asset "js/index.js"}}"></script>
+	</body>
+</html>

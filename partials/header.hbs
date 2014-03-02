@@ -1,0 +1,28 @@
+<div class="blog-cover" {{#if @blog.cover}}style="background-image: url({{@blog.cover}})"{{/if}}></div>
+
+<nav class="blog-nav">
+	<ul class="blog-top-nav">
+		{{! Check the partials directory to define the username in twitter_username.hbs }}
+		<li><a class="icon-twitter" href="https://twitter.com/{{> ids/twitter}}" title="Twitter"></a></li>
+		<li><a class="url-about" href="/about" title="About">About</a></li>
+	</ul>
+</nav>
+
+<header class="site-head">
+	{{#if @blog.description}}
+		{{! Don't show the blog description on post pages. }}
+		{{#unless post}}
+			<h2 class="blog-description" itemprop="description">{{@blog.description}}</h2>
+		{{/unless}}
+	{{/if}}
+	
+	{{#if @blog.logo}}
+		<a class="blog-logo" href="{{@blog.url}}"><img src="{{@blog.logo}}" alt="Blog Logo" itemprop="image" /><span class="hidden" itemprop="name title">{{@blog.title}}</span></a>
+	{{else}}
+		{{#if post}}
+			<h2 class="blog-title"><a href="/" itemprop="name title">{{@blog.title}}</a></h2>
+		{{else}}
+			<h1 class="blog-title"><a href="/" itemprop="name title">{{@blog.title}}</a></h1>
+		{{/if}}
+	{{/if}}
+</header>

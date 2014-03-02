@@ -1,0 +1,40 @@
+{{!< default}}
+
+{{! This is a page template. A page outputs content just like any other post, and has all the same
+    attributes by default, but you can also customise it to behave differently if you prefer. }}
+
+<main class="content" role="main">
+	
+	{{#post}}
+
+		{{! Note: this will only appear on the page with class of `tag-about`, see 
+				CSS for more info. }}
+				
+		{{#if author.cover}}
+			<header class="page-about-head">
+				<i class="author-cover" style="background-image: url({{author.cover}});"></i>
+								<i class="author-image" style="background-image: url({{author.image}});"></i>
+
+				<div class="author-bio">{{author.bio}}</div>
+				<div class="author-details">
+					<h4 class="author-location">{{author.location}}</h2>
+					<h4 class="author-name">{{author.name}}</h2>
+				</div>
+				
+				<hr />
+			</header>
+		{{/if}}
+		
+
+		<article class="{{post_class}}">
+
+			<h1 class="post-title">{{{title}}}</h1>
+
+			<section class="post-content">
+				{{content}}
+			</section>
+		</article>
+		
+	{{/post}}
+
+</main>
