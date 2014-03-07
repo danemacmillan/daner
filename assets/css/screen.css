@@ -441,9 +441,11 @@ main {
   border-bottom: 5px solid #fff;
   min-height: 400px;
 	height: 400px;
-
+	
+	/*
 	background-color: #3498DB;
 	background-blend-mode: luminosity;
+	*/
 }
 
 .site-head {
