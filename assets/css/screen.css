@@ -441,11 +441,6 @@ main {
   border-bottom: 5px solid #fff;
   min-height: 400px;
 	height: 400px;
-	
-	/*
-	background-color: #3498DB;
-	background-blend-mode: luminosity;
-	*/
 }
 
 .site-head {
@@ -933,6 +928,12 @@ html {
 	opacity: 1;
 }
 
+.dsq-brlink {
+	display: block;
+	margin: 40px auto 0 auto;
+	text-align: center;
+}
+
 
 /* ==========================================================================
    6. Third Party Elements - Embeds from other services
@@ -1044,9 +1045,6 @@ html {
  * If you tag a `page` as 'about', then the code here will modify it 
  * specifically for that page.
  */
-.tag-about {
-	
-}
 
 .tag-about .blog-title {
 	color: #fff;
@@ -1122,17 +1120,12 @@ html {
 	color: #fff;
 	text-shadow: 0 0 2px #000, 0 0 2px #000, 0 0 2px #000;
 	width: 60%;
-	font-size: 1.6rem;
-  font-weight: normal;
-  font-family: serif;
-	font-style: italic;
 }
 
 .tag-about .author-details {
 	position: relative;
 	z-index: 10;
 	margin: -140px 40px 80px 220px;
-	font-family: 'Lobster', cursive;
 }
 
 .tag-about .author-details .author-location {
@@ -1328,6 +1321,33 @@ html {
 	
 	.tag-about .page-about-head {
 		margin: 0;
+	}
+	
+	.tag-about .author-bio {
+		font-size: 1.2rem;
+		top: 80px;
+		text-align: center;
+		width: 90%;
+		left: 5%;
+	}
+	
+	.tag-about .author-image {
+			margin: -80px auto 0 auto;
+	}
+	
+	.tag-about .author-details {
+		margin: 20px;
+		text-align: center;
+	}
+	
+	.tag-about .author-details .author-name {
+		font-size: 14px;
+		color: #999;
+	}
+	.tag-about .author-details .author-location {
+		font-size: 14px;
+		color: #999;
+		text-shadow: none;
 	}
 }
 
