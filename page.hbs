@@ -11,14 +11,14 @@
 				CSS for more info. }}
 				
 		{{#if author.cover}}
-			<header class="page-about-head">
+			<header class="page-about-head" itemscope itemtype="http://schema.org/Person">
 				<i class="author-cover" style="background-image: url({{author.cover}});"></i>
-								<i class="author-image" style="background-image: url({{author.image}});"></i>
+				<i class="author-image" itemprop="image" style="background-image: url({{author.image}});"></i>
 
 				<div class="author-bio">{{author.bio}}</div>
 				<div class="author-details">
-					<h4 class="author-location">{{author.location}}</h2>
-					<h4 class="author-name">{{author.name}}</h2>
+					<h4 class="author-location" itemprop="homeLocation">{{author.location}}</h2>
+					<h4 class="author-name" itemprop="name">{{author.name}}</h2>
 				</div>
 				
 				<hr />
@@ -26,11 +26,11 @@
 		{{/if}}
 		
 
-		<article class="{{post_class}}">
+		<article class="{{post_class}}" itemscope itemtype="http://schema.org/BlogPosting">
 
-			<h1 class="post-title">{{{title}}}</h1>
+			<h1 class="post-title" itemprop="name headline">{{{title}}}</h1>
 
-			<section class="post-content">
+			<section class="post-content" itemprop="articleBody">
 				{{content}}
 			</section>
 		</article>
