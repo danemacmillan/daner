@@ -1,0 +1,30 @@
+{{!< default}}
+
+{{! This is a page template. A page outputs content just like any other post, and has all the same
+    attributes by default, but you can also customise it to behave differently if you prefer. }}
+
+<main class="content" role="main">
+	
+	{{#post}}
+
+		<header class="page-about-head" itemscope itemtype="http://schema.org/Person" style="background-image: url({{author.cover}});">
+			<dl class="author-details">
+				<dt>English defiler</dt>
+				<dd itemprop="name"><i class="author-image" itemprop="image" style="background-image: url({{author.image}});"></i>{{author.name}}</dd>				
+				<dt>Sleeps often</dt>
+				<dd itemprop="homeLocation">{{author.location}}</dd>
+				<dt>Hackneyed bio</dt>
+				<dd itemprop="homeLocation">{{author.bio}}</dd>
+			</dl>
+		</header>
+
+		<article class="{{post_class}}" itemscope itemtype="http://schema.org/BlogPosting">
+			<h1 class="post-title" itemprop="name headline">{{{title}}}</h1>
+			<section class="post-content" itemprop="articleBody">
+				{{content}}
+			</section>
+		</article>
+		
+	{{/post}}
+
+</main>

@@ -1,0 +1,32 @@
+{{!< default}}
+
+<main class="content" role="main">
+
+		<header class="tag-archive-header">
+			Posts tagged with:
+			<h1>{{tag.name}}</h1>
+		</header>
+
+    {{! Each post will be output using this markup }}
+    {{#foreach posts}}
+		
+    <article class="{{post_class}} {{#if @first}}post-first-highlight{{/if}} index-{{@index}}" itemscope itemtype="http://schema.org/BlogPosting">
+        <header class="post-header">
+            <span class="post-meta">
+							<time class="time-ago" title="{{date format='dddd, MMMM DD, YYYY - HH:MM'}}" datetime="{{date format='YYYY-MM-DD'}}">{{date timeago="true"}}</time>
+							<time class="time-long" title="{{date format='dddd, MMMM DD, YYYY - HH:MM'}}" datetime="{{date format='YYYY-MM-DD'}}" itemprop="datePublished">{{date format='dddd, MMMM DD, YYYY'}}</time>
+						</span>
+						
+						<h2 class="post-title"><a href="{{url}}" itemprop="name headline">{{title}}</a></h2>
+        </header>
+        <section class="post-excerpt" itemprop="articleSection">
+            <p>{{excerpt words="100"}}&hellip;</p>
+						<a class="readrest" href="{{url}}" itemprop="url">Read the rest</a>
+        </section>
+    </article>
+
+    {{/foreach}}
+
+</main>
+
+{{pagination}}
