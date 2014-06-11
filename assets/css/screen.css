@@ -496,10 +496,10 @@ table {
 }
 
 /* Apply these base styles to all icons */
-.icon-ghost:before, 
-.icon-feed:before, 
-.icon-twitter:before, 
-.icon-google-plus:before, 
+.icon-ghost:before,
+.icon-feed:before,
+.icon-twitter:before,
+.icon-google-plus:before,
 .icon-facebook:before {
   font-family: 'icons';
   speak: none;
@@ -512,7 +512,7 @@ table {
   text-decoration: none;
 }
 
-/* Each icon is created by inserting the corret character into the 
+/* Each icon is created by inserting the corret character into the
    content of the :before pseudo element. Like a boss. */
 .icon-ghost:before {
   content: "\e000";
@@ -728,7 +728,7 @@ kbd {
   font-weight: bold;
   background: #f4f4f4;
   border-radius: 4px;
-  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.2), 
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.2),
         0 1px 0 0 #fff inset;
 }
 
@@ -823,7 +823,7 @@ margin on the iframe, cause it breaks stuff. */
    4. General - The main styles for the the theme
    ========================================================================== */
 
-	 
+
 main {
 	position: relative;
   max-width: 800px;
@@ -877,7 +877,7 @@ main {
   margin-bottom: 5rem;
   text-align: center;
   color: #fff;
-  background: #333 no-repeat center bottom fixed;
+  background: #333 no-repeat center center;
   background-size: cover;
   margin: 0;
   z-index: -1;
@@ -922,13 +922,13 @@ main {
   font-family: 'Lobster', cursive;
   color: #000;
   margin: 0 0 -50px 0;
-	
+
 	/* Adjust width for long names, especially when at half scale. If you would
 	prefer that the string collapses to multipe lines, take this out, and also
 	remove the overflow-x html rule below. */
 	position: relative;
 	width: 400%;
-	left: -150%;	
+	left: -150%;
 }
 
 /* Adjust overscale. Normally I wouldn't recommend doing this, but for the sake
@@ -992,7 +992,7 @@ html {
 @-webkit-keyframes header-flex {
   100% {
     -webkit-transform: translateY(-52px) scale(0.5);
-		
+
   }
 }
 
@@ -1285,7 +1285,7 @@ html {
 	font-size: 1.2rem;
 	line-height: 2.4rem;
 	text-shadow: 0 0 2px #fff;
-	
+
 	transition: all 0.2s ease;
 	opacity: 0.50;
 	-webkit-transform: scale(0.95);
@@ -1539,7 +1539,7 @@ html {
 	border-top-right-radius: 2px;
 	overflow: hidden;
 	background-color: #f5f5f5;
-	
+
 	position: relative;
 	display: block;
 	height: 300px;
@@ -1593,7 +1593,7 @@ html {
     line-height: 1.5em;
 		padding: 40px 0 20px 0;
   }
-	
+
 	.blog-title {
 		font-size: 12rem;
 		margin: 0 0 -40px 0;
@@ -1607,7 +1607,7 @@ html {
 	.tag-template .post {
     padding-bottom: 1rem;
   }
-	
+
 	/* Due to scale in post page, reset some of the media query adjustments. */
 
 	.post-template .blog-title,
@@ -1637,16 +1637,16 @@ html {
   h4 {
     font-size: 2.8rem;
   }
-	
+
 	main {
 		margin: auto 20px;
 	}
-	
+
 	.post-comments {
 		margin: auto;
 		padding: 0 20px;
-	}	
-	
+	}
+
 		.tag-archive-header {
 		margin: 21px -20px 0 -40px;
 	}
@@ -1663,12 +1663,12 @@ html {
 	main {
 		padding: 0 0 40px 0;
 	}
-	
+
   .blog-title {
     font-size: 7rem;
 		margin: 0 0 -21px 0;
   }
-	
+
 	.site-head {
 		margin: 0 20px;
 	}
@@ -1684,12 +1684,12 @@ html {
 		margin: 0;
 		width: 100%;
   }
-	
+
 	.post-template .blog-title,
 	.tag-template .blog-title {
 		margin: 7px 0 -33px 0;
 	}
-	
+
 	.post-tags {
 		position: relative;
 		float: none;
@@ -1698,20 +1698,20 @@ html {
 		padding: 0;
 		margin: 10px 0;
 	}
-	
+
 	.post-tags a {
 		max-width: 100% !important;
 		width: auto;
 		margin: 0;
 		padding: 5px !important;
 	}
-	
+
 	.post-tags li {
 		display: inline-block;
 		margin: 0;
 		padding: 0;
 	}
-	
+
 	.post-tags li {
 		display: inline-block;
 	}
@@ -1738,7 +1738,7 @@ html {
   .post-meta {
     font-size: 1.3rem;
   }
-	
+
 	.post-footer {
 		margin: 60px 0 -40px 0;
 	}
@@ -1760,24 +1760,24 @@ html {
     margin-top: 6rem;
     font-size: 1.1rem;
   }
-	
+
 	.site-footer .themeby {
 		opacity: 0.80;
 		transform: scale(1);
 		background-color: #111;
 	}
-	
+
 	.tag-archive-header {
 		margin: 0 0 0 -20px;
 	}
-	
+
 	.page-template-about .page-about-head {
 		margin: 0;
 	}
-	
+
 	.page-template-about .author-details dt,
 	.page-template-about .author-details dd {
-		margin: 2px 0;		
+		margin: 2px 0;
 		float: left;
 		clear: both;
 		text-align: left;
@@ -1785,7 +1785,7 @@ html {
 }
 
 @media only screen and (max-width: 400px) {
-	
+
 	/* Do this to break any long text, but also let it display off to the sides. */
 	.blog-title {
 		position: relative;
@@ -1795,7 +1795,7 @@ html {
 		margin: 0 0 -20px 0;
 		padding: 0 25%;
 	}
-	
+
 	.post-template .blog-title,
 	.tag-template .blog-title {
 		width: 400%;
@@ -1803,7 +1803,7 @@ html {
 		font-size: 10rem;
 		margin: 40px auto -11px auto;
 	}
-	
+
 	.tag-archive-header {
 		margin: 0 0 0 -20px;
 	}
