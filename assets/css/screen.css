@@ -861,6 +861,7 @@ main {
 }
 
 .blog-nav a:hover,
+.tag-page-placeholders .url-pages,
 .page-template-about .url-about,
 .home-template .url-home {
   color: #fff;
