@@ -5,7 +5,7 @@
 		{{! Check the partials directory to define the username in twitter_username.hbs }}
 		<li><a class="icon-twitter" href="https://twitter.com/{{> ids/twitter}}" title="Twitter"></a></li>
 		<li><a class="url-about" href="/about/" title="About">About</a></li>
-		<li><a class="url-home" href="/" title="or home">Posts</a></li>
+		<li><a class="url-home" href="/" title="or home">Blog home</a></li>
 	</ul>
 </nav>
 
@@ -13,10 +13,10 @@
 	{{#if @blog.description}}
 		{{! Don't show the blog description on post pages. }}
 		{{#unless post}}
-			<h2 class="blog-description" itemprop="description">{{@blog.description}}</h2>
+			<strong class="blog-description" itemprop="description">{{@blog.description}}</strong>
 		{{/unless}}
 	{{/if}}
-	
+
 	{{#if @blog.logo}}
 		<a class="blog-logo" href="{{@blog.url}}"><img src="{{@blog.logo}}" alt="Blog Logo" itemprop="image" /><span class="hidden" itemprop="name title">{{@blog.title}}</span></a>
 	{{else}}

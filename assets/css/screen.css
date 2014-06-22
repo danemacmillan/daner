@@ -949,6 +949,7 @@ html {
 }
 
 .blog-description {
+  display: block;
   margin: 0;
   font-size: 2.0rem;
   font-weight: normal;
@@ -1377,6 +1378,7 @@ html {
 	overflow: hidden;
 	height: 4rem;
 	margin: 0 0 60px 0;
+    display: none;
 }
 
 .such-troll-so-amaze-very-dane .post-discuss-agree {
