@@ -2,6 +2,8 @@
 
 The [Daner](https://github.com/danemacmillan/daner/) theme for [Ghost](https://github.com/tryghost/ghost/).
 
+This is a work in progress. When the theme is complete, CSS will be reformatted.
+
 ## Copyright & License
 
 Copyright (C) 2014 Daner Theme - Released under the MIT License.
