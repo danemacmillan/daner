@@ -1,8 +1,12 @@
-# Daner Theme for Ghost
+# Daner theme for Ghost
 
 The [Daner](https://github.com/danemacmillan/daner/) theme for [Ghost](https://github.com/tryghost/ghost/).
 
 This is a work in progress. When the theme is complete, CSS will be reformatted.
+
+## How it looks
+
+The theme is currently in use for my personal blog located at https://danemacmillan.com.
 
 ## Copyright & License
 
