@@ -24,3 +24,4 @@ that is where the username is pulled in.
 - `addthis.hbs`
 - `disqus.hbs`
 - `twitter.hbs`
+- `piwik.hbs` (set a domain, no protocol, leading slash)
